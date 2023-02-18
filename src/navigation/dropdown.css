@@ -1,0 +1,24 @@
+ul li {
+  list-style-type: none;
+  font-family: "Inika", serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  margin: 0.5em 0.5em 0.5em 0.5em;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  margin: 0;
+  border-top: 1px solid white;
+}

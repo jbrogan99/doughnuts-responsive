@@ -1,0 +1,13 @@
+#hamburger {
+  margin: 0.5em 0.5em 0 0;
+}
+
+#menu_container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  color: white;
+  list-style-type: none;
+}
