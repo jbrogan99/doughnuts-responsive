@@ -1,5 +1,5 @@
 import React from "react";
-import hamburger_menu from "../images/hamburger_menu.png";
+import hamburger_menu from "../images/hamburger_menu-min.png";
 import "./hamburger_dropdown.css";
 
 export const HamburgerDropdown = ({ setShowResults, showResults }) => {

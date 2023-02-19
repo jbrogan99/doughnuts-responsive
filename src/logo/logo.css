@@ -1,4 +1,4 @@
-section {
+#logo-container {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -12,7 +12,7 @@ section {
   color: white;
 }
 
-section img {
+#logo_img {
   margin-top: 0.2em;
   width: fit-content;
 }

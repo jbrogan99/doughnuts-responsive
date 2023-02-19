@@ -1,10 +1,10 @@
 import React from "react";
-import cropped_doughnut from "../images/cropped_doughnut.jpg";
-import doughnut from "../images/doughnut_transparent_w.png";
+
+import doughnut from "../images/doughnut_transparent_w-min.png";
 import "./logo.css";
 export const Logo = () => {
   return (
-    <section aria-label="Doughnuts Logo">
+    <section aria-label="Doughnuts Logo" id="logo-container">
       <p className="logo">D</p>
       <img
         id="logo_img"

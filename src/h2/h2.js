@@ -1,5 +1,5 @@
 import React from "react";
 
-export const HeadingTwo = ({ heading }) => {
-  return <h2>{heading}</h2>;
+export const HeadingTwo = ({ heading, id }) => {
+  return <h2 id={id}>{heading}</h2>;
 };

@@ -1,8 +1,8 @@
-import house from "../images/house-icon.png";
-import info from "../images/information-about-us-icon-17.png";
-import doughnut from "../images/doughnut_transparent_w.png";
-import wholesale from "../images/wholesale_transparent.png";
-import contact from "../images/contact_us.png";
+import house from "../images/house-icon-min.png";
+import info from "../images/information-about-us-icon-17-min.png";
+import doughnut from "../images/doughnut_transparent_w-min.png";
+import wholesale from "../images/wholesale_transparent-min.png";
+import contact from "../images/contact_us-min.png";
 import "./dropdown.css";
 export const DropDown = ({ showResults }) => {
   return (

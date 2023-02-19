@@ -1,0 +1,78 @@
+#container-stock-our-stuff {
+  background-color: var(--hot-pink);
+}
+
+#pic-collage-container {
+  display: grid;
+  grid-template-columns: 30% 20% 20% 30%;
+  grid-template-rows: repeat(5, 20%);
+  font-size: 0;
+}
+
+#pic-collage-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  outline: 1px solid black;
+}
+
+#caramel {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+#red-velvet {
+  grid-column: 1/2;
+  grid-row: 3/6;
+}
+
+#cake {
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+
+#biscoff-cookie {
+  grid-column: 2/4;
+  grid-row: 2/4;
+}
+
+#hazelnut-doughnut {
+  grid-column: 2/3;
+  grid-row: 4/6;
+}
+
+#sprinkled-doughnut {
+  grid-column: 3/4;
+  grid-row: 4/6;
+}
+
+#lemon-doughnut {
+  grid-column: 4/5;
+  grid-row: 1/3;
+}
+
+#coffee-doughnut {
+  grid-column: 4/5;
+  grid-row: 3/6;
+}
+
+#stock-our-stuff {
+  padding: 0.5em 0 0.5em 0;
+  margin: 0;
+}
+
+#heading-description-wholesale-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#heading-description-wholesale-container p,
+h2 {
+  color: white;
+}
+
+#heading-description-wholesale-container p {
+  margin: 0 1em 1em 1em;
+}
