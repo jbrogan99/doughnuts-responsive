@@ -1,0 +1,755 @@
+@import url("https://fonts.googleapis.com/css2?family=Inika&family=Roboto:wght@300&display=swap"); /*Logo*/
+@import url("https://fonts.googleapis.com/css2?family=Inika&family=Lato:wght@300&family=Roboto:wght@300&display=swap"); /*P Tag*/
+@import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Lato:wght@300&family=Roboto:wght@300&display=swap"); /*H1*/
+
+/*Mobile*/
+
+@media only screen and (min-width: 300px) {
+  /*Styles & Fonts*/
+  html {
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
+  }
+
+  .logo {
+    font-size: 2rem !important;
+  }
+
+  #para-container-our-story {
+    margin: 0 1em 1em 1em;
+  }
+
+  #para-container-our-story p {
+    margin-bottom: 1em;
+  }
+
+  .doughnut-circle-container h4 {
+    color: black !important;
+  }
+
+  :root {
+    --hot-pink: #ff4083;
+    --light-purple: #fdefff;
+    --ptag-margin-mobile: 0em 1em 0em 1em;
+  }
+
+  /*Home page*/
+  h2 {
+    font-family: "Kanit", sans-serif;
+    font-family: "Rampart One", cursive;
+    font-family: "Titan One", cursive;
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-family: "Kanit", sans-serif;
+    font-family: "Rampart One", cursive;
+    font-family: "Titan One", cursive;
+    color: black;
+    font-size: 2rem;
+  }
+
+  p {
+    line-height: 1.4;
+    font-size: 1rem !important;
+  }
+
+  button {
+    font-family: "Kanit", sans-serif;
+    font-family: "Rampart One", cursive;
+    font-family: "Titan One", cursive;
+    color: var(--hot-pink);
+    background-color: black;
+    border: 1px solid black;
+    font-size: 1rem;
+  }
+
+  /*end of generic tags*/
+
+  .nav-header-container {
+    display: flex;
+    flex-direction: row;
+    background: black;
+    align-items: center;
+  }
+
+  .background-desktop {
+    background-image: linear-gradient(
+      177deg,
+      #ff597d 60%,
+      #fdefff calc(60% + 2px)
+    );
+  }
+
+  #doughnut-image-container-desk {
+    display: flex;
+    justify-content: center;
+  }
+
+  #doughnut-image-container-desk img:nth-child(2) {
+    display: none;
+  }
+
+  #doughnut-image-container-desk img:nth-child(3) {
+    display: none;
+  }
+
+  .background-color-0 {
+    padding: 2em;
+    margin: 0;
+    background: linear-gradient(to top, #ff7291 0%, #fe5196 100%);
+    border-radius: 25px;
+  }
+
+  #doughnut-image-container-desk img {
+    width: 100%;
+    border-radius: 25px;
+    height: 30vh;
+    width: 60vw;
+  }
+
+  #celebrate-container {
+    background-image: url("../images/d-background-cropped.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(
+      4,
+      minmax(0, 1fr)
+    ); /*minmax prevents overflow container (make sure that there is the column has a definite minimum width instead of auto) */
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    margin-top: 20px;
+  }
+
+  #celebrate-container h2 {
+    width: 100%;
+    line-height: 1.5;
+    margin-right: 5em;
+    color: black !important;
+    grid-column: 4/5;
+    grid-row: 1/2;
+    justify-self: center;
+  }
+
+  .hero-h1 {
+    text-align: center;
+  }
+
+  #home-description-desk {
+    grid-column: 3/5;
+    grid-row: 2/3;
+    color: white;
+    align-self: center;
+    margin: 1em 1em 0 1em;
+    font-size: 0.8rem !important;
+  }
+
+  #home-description2-desk-container img {
+    justify-self: center;
+
+    margin: 3em 0 3em 0;
+    border: 1px solid black;
+  }
+
+  #home-description2-desk-container h2 {
+    color: black;
+  }
+
+  #under-video-text {
+    color: black !important;
+    text-align: left !important;
+    margin: 2em 2em 2em 2em;
+  }
+
+  #peek-inside-bakery-container div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #peek-inside-bakery-container div h2 {
+    margin: 0 0 2em 0;
+  }
+
+  #home-description3-desk {
+    background-color: white;
+    border-top-left-radius: 180px 50px;
+    border-top-right-radius: 180px 50px;
+    height: 100%;
+    margin-bottom: 2em;
+  }
+
+  .redName-desk {
+    color: red;
+  }
+
+  /*blob home page*/
+  .inner-wedding {
+    display: flex;
+    border-radius: 0 0 25px 25px;
+    width: 100%;
+    height: fit-content;
+    background-image: linear-gradient(180deg, #ff597d 0%, #f09 100%);
+  }
+
+  #birthday-wedding-desc {
+    padding: 2em;
+    color: white;
+  }
+
+  .container-dipped .inner-dipped {
+    border-radius: 94% 40% 30% 67% / 20% 37% 56% 34%;
+    width: 100%;
+    height: 280px;
+    background: #f09;
+    background-image: linear-gradient(45deg, #3023ae 0%, #f09 100%);
+  }
+  .container-dipped {
+    grid-column: 3/5;
+    grid-row: 2/3;
+    overflow: hidden;
+  }
+
+  /*end of home page*/
+
+  #container-our-story {
+    background-image: linear-gradient(
+      177deg,
+      var(--hot-pink) 65%,
+      var(--light-purple) calc(65% + 2px)
+    );
+  }
+
+  #container-our-story h1 {
+    margin: 0.5em 0 0.5em 0;
+  }
+
+  #about-us-desc-container h2 {
+    color: white;
+  }
+  #about-us-desc-container p {
+    margin: 0.5em 1em 0.5em 1em;
+    color: white;
+    font-family: "Inika", serif;
+    font-family: "Lato", sans-serif;
+    font-family: "Roboto", sans-serif;
+  }
+
+  #container-contact-us {
+    background-color: var(--hot-pink);
+  }
+
+  #contact-us-para-container p {
+    color: white;
+
+    margin: 1.5em 0.5em 1.5em 0.5em;
+  }
+
+  #banner-img {
+    height: 15em;
+    width: 100%;
+    opacity: 0.4;
+  }
+
+  #banner-text span {
+    color: black;
+    font-weight: bolder;
+  }
+
+  #banner-text {
+    top: 0.5em;
+    text-align: center;
+  }
+
+  .redName {
+    color: red;
+  }
+
+  #shop-donut-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+  #button-container {
+    padding: 0 2em 2em 1.5em;
+  }
+  .pink-black-btn {
+    padding: 20px;
+    border-radius: 25px;
+    border: 3px solid var(--hot-pink);
+  }
+
+  .pink-black-btn::after {
+    content: ">";
+    margin: 0 0.5em 0 0.5em;
+  }
+
+  .pink-black-btn::before {
+    content: "";
+    margin-left: 0.5em;
+  }
+
+  #navMobileContainer {
+    background-color: black;
+    padding: 0.3em;
+  }
+
+  #first-section {
+    background-color: #ff657d;
+    margin: 0;
+    background-image: url("../images/background_sprinkles.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position-y: -280px;
+  }
+
+  #background-sprinkles h1 {
+    margin-bottom: 10px;
+  }
+
+  #first-section #doughnut-container img {
+    height: 100%;
+    width: 50%;
+    outline: 1px solid black;
+  }
+  #doughnut-container {
+    font-size: 0;
+  }
+
+  #home-description {
+    margin: 0 1.5em 2em 1.5em;
+    color: white;
+  }
+
+  #bold-font {
+    font-weight: bold;
+  }
+
+  #celebrate {
+    background-image: url("../images/d-background-cropped.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+  }
+
+  #celebrate h2 {
+    margin-top: 0;
+    color: white;
+    text-align: right;
+    margin: 0.5em 0.5em 0 0;
+  }
+
+  #home-description2 {
+    background-image: linear-gradient(
+      177deg,
+      #ff4083 25%,
+      #fdefff calc(25% + 2px)
+    );
+  }
+
+  #home-description2 p {
+    margin: 0;
+    padding: 1em 1em 1em 1em;
+  }
+
+  #video-heading {
+    font-weight: bolder;
+  }
+
+  #home-description3 {
+    background-color: white;
+    border-top-left-radius: 180px 50px;
+    border-top-right-radius: 180px 50px;
+    height: 100%;
+  }
+
+  #ptagColours {
+    color: black !important;
+    margin: 2em 2em 1em 2em !important;
+  }
+
+  #container-stock-our-stuff {
+    background-color: var(--hot-pink);
+  }
+
+  #pic-collage-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    outline: 1px solid black;
+  }
+
+  #stock-our-stuff {
+    padding: 0.5em 0 0.5em 0;
+    margin: 0;
+  }
+
+  #heading-description-wholesale-container p,
+  h2 {
+    color: white;
+  }
+
+  #heading-description-wholesale-container p {
+    margin: 0 1em 1em 1em;
+  }
+
+  /*Positioning*/
+  #heading-description-wholesale-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #pic-collage-container {
+    display: grid;
+    grid-template-columns: 30% 20% 20% 30%;
+    grid-template-rows: repeat(5, 20%);
+    font-size: 0;
+  }
+
+  #caramel {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  #red-velvet {
+    grid-column: 1/2;
+    grid-row: 3/6;
+  }
+
+  #cake {
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+
+  #biscoff-cookie {
+    grid-column: 2/4;
+    grid-row: 2/4;
+  }
+
+  #hazelnut-doughnut {
+    grid-column: 2/3;
+    grid-row: 4/6;
+  }
+
+  #sprinkled-doughnut {
+    grid-column: 3/4;
+    grid-row: 4/6;
+  }
+
+  #lemon-doughnut {
+    grid-column: 4/5;
+    grid-row: 1/3;
+  }
+
+  #coffee-doughnut {
+    grid-column: 4/5;
+    grid-row: 3/6;
+  }
+
+  #navMobileContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-header-container {
+    display: none;
+  }
+
+  #first-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #first-section {
+    display: flex;
+    align-items: center;
+  }
+
+  #celebrate {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #home-description2 {
+    position: relative;
+  }
+
+  #cross-over-image {
+    width: 70%;
+    height: 10em;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 10em;
+  }
+
+  #home-description2 aside {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  #final-heading {
+    text-align: center;
+    position: relative;
+    top: 30px;
+  }
+
+  #video-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #about-us-desc-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #images-container-doughnuts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2em 0 2em 0;
+  }
+
+  #cross-over-image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  #cross-over-image-desk {
+    width: 50%;
+    height: 20vh;
+  }
+
+  #contact-us-banner-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  #banner-text {
+    position: absolute;
+  }
+}
+
+/*Desktop*/
+
+@media only screen and (min-width: 1000px) {
+  /*Home page*/
+  /*generic tags*/
+
+  h2 {
+    font-family: "Kanit", sans-serif;
+    font-family: "Rampart One", cursive;
+    font-family: "Titan One", cursive;
+    font-size: 2rem !important;
+  }
+
+  h1 {
+    font-family: "Kanit", sans-serif;
+    font-family: "Rampart One", cursive;
+    font-family: "Titan One", cursive;
+    color: black;
+    font-size: 3rem;
+  }
+
+  p {
+    line-height: 1.4;
+    font-size: 1.4rem !important;
+  }
+
+  /*end of generic tags*/
+
+  .hero-h1 {
+    text-align: center;
+  }
+
+  #doughnut-image-container-desk img:nth-child(2) {
+    display: block;
+  }
+
+  #doughnut-image-container-desk img:nth-child(3) {
+    display: block;
+  }
+  #navMobileContainer {
+    display: none;
+  }
+
+  .nav-header-container {
+    display: flex;
+    flex-direction: row;
+    background: black;
+    align-items: center;
+  }
+
+  .background-desktop {
+    background-image: linear-gradient(
+      177deg,
+      #ff597d 56%,
+      #fdefff calc(56% + 2px)
+    );
+  }
+
+  .width-desk-container {
+    margin: 0 10% 0 10%;
+  }
+
+  #doughnut-image-container-desk {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .background-color-0 {
+    padding: 2em;
+    margin: 0;
+    background: linear-gradient(to top, #ff7291 0%, #fe5196 100%);
+    border-radius: 25px;
+  }
+
+  #doughnut-image-container-desk img {
+    width: 33.3%;
+    border-radius: 100px;
+    height: 20em;
+  }
+
+  #celebrate-container {
+    background-image: url("../images/d-background-cropped.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(
+      4,
+      minmax(0, 1fr)
+    ); /*minmax prevents overflow container (make sure that there is the column has a definite minimum width instead of auto) */
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    margin-top: 20px;
+  }
+
+  #celebrate-container h2 {
+    width: 100%;
+    line-height: 1.5;
+    margin-right: 5em;
+    color: black;
+    grid-column: 3/5;
+    grid-row: 1/2;
+    justify-self: flex-start;
+
+    align-self: center;
+  }
+
+  #home-description-desk {
+    grid-column: 3/5;
+    grid-row: 2/3;
+    color: white;
+    align-self: center;
+    margin: 1em;
+    font-size: 1.4rem !important;
+  }
+
+  #home-description2-desk-container img {
+    height: 15em;
+    justify-self: center;
+    width: 25em;
+    margin: 3em 0 3em 0;
+    border: 1px solid black;
+  }
+
+  #home-description2-desk-container h2 {
+    color: black;
+  }
+
+  #under-video-text {
+    color: black !important;
+    text-align: left !important;
+    margin: 2em 2em 2em 2em;
+  }
+
+  #peek-inside-bakery-container div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #peek-inside-bakery-container div h2 {
+    margin: 0 0 2em 0;
+  }
+
+  #home-description3-desk {
+    background-color: white;
+    border-top-left-radius: 180px 50px;
+    border-top-right-radius: 180px 50px;
+    height: 100%;
+    margin-bottom: 2em;
+  }
+
+  .redName-desk {
+    color: red;
+  }
+
+  #birthday-wedding-desc {
+    margin: 0.5em 0.5em 0 0.5em;
+    justify-self: center;
+    align-self: center;
+    margin: 1em;
+    color: white !important;
+  }
+
+  .pink-black-btn:hover {
+    outline: 3px solid var(--hot-pink);
+  }
+
+  /*blob home page*/
+  .container-wedding .inner-wedding {
+    border-radius: 0 0 25px 25px;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(180deg, #ff597d 0%, #f09 100%);
+  }
+
+  .inner-wedding {
+    display: flex;
+  }
+
+  .container-dipped .inner-dipped {
+    border-radius: 94% 40% 30% 67% / 30% 37% 56% 34%;
+    width: 100%;
+    height: 280px;
+    background: #f09;
+    background-image: linear-gradient(45deg, #3023ae 0%, #f09 100%);
+  }
+  .container-dipped {
+    grid-column: 3/5;
+    grid-row: 2/3;
+    overflow: hidden;
+  }
+
+  .fade-in-image,
+  .fade-in-image2 {
+    animation: fadeIn 2s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /*End of home page*/
+}

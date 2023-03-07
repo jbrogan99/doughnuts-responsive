@@ -1,6 +1,5 @@
 import React from "react";
-import "./StockOurStuff.css";
-import { NavLogo } from "../navigation/nav_logo";
+import { NavMobile } from "../navigation/nav_logo";
 import { useState } from "react";
 import { DropDown } from "../navigation/dropdown";
 import { HeadingOne } from "../h1/h1";
@@ -21,10 +20,10 @@ export const StockOurStuff = () => {
     <>
       <section id="container-stock-our-stuff">
         <header id="navLogo">
-          <NavLogo
+          <NavMobile
             setShowResults={setShowResults}
             showResults={showResults}
-          ></NavLogo>
+          ></NavMobile>
         </header>
         <DropDown showResults={showResults}></DropDown>
         <HeadingOne id="stock-our-stuff" heading="Stock our stuff"></HeadingOne>

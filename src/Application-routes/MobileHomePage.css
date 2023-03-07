@@ -1,6 +1,5 @@
-#ptagColours,
-#ptag2,
-#stores_button {
+#stores_button,
+li {
   font-family: "Inika", serif;
   font-family: "Lato", sans-serif;
   font-family: "Roboto", sans-serif;
@@ -60,6 +59,10 @@ h1 {
   color: white;
   font-size: 3em;
   text-align: center;
+}
+
+h2 {
+  font-size: 2em;
 }
 
 #first-section #doughnut-container img {

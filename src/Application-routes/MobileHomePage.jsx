@@ -1,27 +1,25 @@
 import React from "react";
 import { HeadingOne } from "../h1/h1";
 import { HeadingTwo } from "../h2/h2";
-import { Ptag } from "../ptag/Ptag.js";
+import { Ptag } from "../ptag/Ptag.jsx";
 import { CrossOverImage } from "../crossoverImage/CrossoverImage";
-import { NavLogo } from "../navigation/nav_logo";
+import { NavMobile } from "../navigation/nav_logo";
 import video from "../video/video.mp4";
 import coffee from "../images/coffee_cropped-min.png";
 import sprinkles from "../images/sprinkles-min.jpg";
 import biscoff from "../images/biscoff-min.jpg";
 import { DropDown } from "../navigation/dropdown";
 import { useState } from "react";
-import "./MobileHomePage.css";
-
 export function MobileHomePage() {
   const [showResults, setShowResults] = useState(false);
+
   return (
     <>
-      <header id="navLogo">
-        <NavLogo
+      
+        <NavMobile
           setShowResults={setShowResults}
           showResults={showResults}
-        ></NavLogo>
-      </header>
+        ></NavMobile>
       <DropDown showResults={showResults}></DropDown>
       <section id="first-section">
         <div id="background-sprinkles">

@@ -1,4 +1,4 @@
-ul li {
+.text-image-nav-container li {
   list-style-type: none;
   font-family: "Inika", serif;
   font-family: "Lato", sans-serif;
@@ -10,7 +10,7 @@ ul li {
   justify-content: center;
 }
 
-ul {
+.text-image-nav-container {
   display: inline-block;
   width: 100%;
   padding: 0;

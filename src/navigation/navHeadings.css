@@ -1,0 +1,21 @@
+.nav-headings-container-desk li {
+  color: white;
+  list-style-type: none;
+  font-size: 1.5em;
+}
+
+.nav-headings-container-desk {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-headings-container-desk li:first-child {
+  margin-left: 10em;
+}
+
+.nav-headings-container-desk li:last-child {
+  margin-right: 2em;
+}

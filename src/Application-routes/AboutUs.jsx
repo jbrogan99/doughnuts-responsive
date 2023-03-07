@@ -1,6 +1,5 @@
 import React from "react";
-import "./AboutUs.css";
-import { NavLogo } from "../navigation/nav_logo";
+import { NavMobile } from "../navigation/nav_logo";
 import { useState } from "react";
 import { DropDown } from "../navigation/dropdown";
 import { HeadingOne } from "../h1/h1";
@@ -18,10 +17,10 @@ export const AboutUs = () => {
     <>
       <section id="container-our-story">
         <header id="navLogo">
-          <NavLogo
+          <NavMobile
             setShowResults={setShowResults}
             showResults={showResults}
-          ></NavLogo>
+          ></NavMobile>
         </header>
         <DropDown showResults={showResults}></DropDown>
         <HeadingOne heading="Our Story"></HeadingOne>
@@ -31,23 +30,8 @@ export const AboutUs = () => {
           <Ptag paragraph="Down to your final quid? The obvious thing to do is to start making and selling delicious doughnuts. Well, that’s what we did back in 2015 anyway"></Ptag>
         </section>
         <section id="images-container-doughnuts">
-          <div id="img-one-container">
-            <CircleDoughnut
-              id="jam-doughnut"
-              width="auto"
-              height="auto"
-              alt="jam doughnut"
-              src={jam}
-            />
-          </div>
-          <div id="img-two-container">
-            <CircleDoughnut
-              id="biscoff-doughnut"
-              width="40%"
-              alt="biscoff doughnut"
-              src={biscoff}
-            />
-          </div>
+          <CircleDoughnut alt="jam doughnut" src={jam} />
+          <CircleDoughnut alt="biscoff doughnut" src={biscoff} />
         </section>
         <section id="cross-over-image-container">
           <CrossOverImage
