@@ -1,7 +1,6 @@
 import React from "react";
 import { NavDesktop } from "../navigation/NavDesktop";
 import { Blob } from "../blob/blob";
-import { HeadingTwo } from "../h2/h2";
 import { Sprinkles } from "../sprinkles/sprinkles";
 import { CrossOverImage } from "../crossoverImage/CrossoverImage";
 import { NavMobile } from "../navigation/nav_logo";
@@ -115,10 +114,7 @@ export const Home = () => {
           </aside>
         </section>
         <section id="home-description3">
-          <HeadingTwo
-            id="final-heading"
-            heading="You can find our delish Ds in more places than ever!"
-          ></HeadingTwo>
+          <h2  id="final-heading">You can find our delish Ds in more places than ever!</h2>
           <p id="ptagColours">
             Obey your rumble and tuck in at any of our
             <span className="redName"> Manchester, Stockport, Bolton </span> or

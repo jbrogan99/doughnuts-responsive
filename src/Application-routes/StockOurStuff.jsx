@@ -2,7 +2,6 @@ import React from "react";
 import { NavMobile } from "../navigation/nav_logo";
 import { useState } from "react";
 import { DropDown } from "../navigation/dropdown";
-import { HeadingOne } from "../h1/h1";
 import caramel from "../images/caramel.jpg";
 import redVelvet from "../images/redVelevt.jpg";
 import cake from "../images/cake1.jpg";
@@ -11,8 +10,6 @@ import hazelnut from "../images/hazlenut.jpg";
 import sprinkles from "../images/sprinkles-min.jpg";
 import lemon from "../images/lemon.jpg";
 import coffee from "../images/coffee-min.jpg";
-import { HeadingTwo } from "../h2/h2";
-import { Ptag } from "../ptag/Ptag";
 
 export const StockOurStuff = () => {
   const [showResults, setShowResults] = useState(false);
