@@ -3,7 +3,7 @@ import info from "../images/information-about-us-icon-17-min.png";
 import doughnut from "../images/doughnut_transparent_w-min.png";
 import wholesale from "../images/wholesale_transparent-min.png";
 import contact from "../images/contact_us-min.png";
-import Link from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./dropdown.css";
 export const DropDown = ({ showResults }) => {
   return (

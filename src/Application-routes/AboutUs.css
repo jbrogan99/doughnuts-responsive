@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inika&family=Lato:wght@300&family=Roboto:wght@300&display=swap"); /*P Tag*/
 @import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Lato:wght@300&family=Roboto:wght@300&display=swap"); /*H1*/
 
-html {
+/* html {
   height: 100%;
 }
 body {
@@ -60,4 +60,4 @@ body {
 
 #para-container-our-story p {
   margin-bottom: 1em;
-}
+} */

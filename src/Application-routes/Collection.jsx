@@ -2,10 +2,9 @@ import React from "react";
 import { NavMobile } from "../navigation/nav_logo";
 import { useState } from "react";
 import { DropDown } from "../navigation/dropdown";
-import { HeadingOne } from "../h1/h1";
-import { HeadingTwo } from "../h2/h2";
-import doughnut1 from "../images/cropped_doughnut-min.jpg";
+import doughnut1 from "../images/circle-coffee.png";
 import { CircleDoughnut } from "../Circle-Doughnut/CircleDoughnut";
+
 
 export const Collection = () => {
   const [showResults, setShowResults] = useState(false);
@@ -19,11 +18,9 @@ export const Collection = () => {
           ></NavMobile>
         </header>
         <DropDown showResults={showResults}></DropDown>
-        <HeadingOne id="collection-heading" heading="Doughnuts"></HeadingOne>
-        <HeadingTwo heading="find our extensive range below"></HeadingTwo>
-        <CircleDoughnut src={doughnut1} alt="t" >
-          <h4>Tester</h4>
-        </CircleDoughnut>
+        <h1 id="collection-heading">Doughnuts</h1>
+        <h2>find our extensive range below</h2>
+        <CircleDoughnut src={doughnut1} children="Caramel Oozer" alt="caramel doughnut" />
       </section>
     </>
   );

@@ -1,9 +1,9 @@
 import React from "react";
-import { AboutUs } from "../Application-routes/AboutUs";
-import { StockOurStuff } from "./mobile/StockOurStuff";
-import { ContactUs } from "./mobile/ContactUs";
-import { Collection } from "./mobile/Collection";
-import { Home } from "./Application-routes/Home";
+import { AboutUs } from ".//Application-routes/AboutUs";
+import { StockOurStuff } from ".//Application-routes/StockOurStuff";
+import { ContactUs } from ".//Application-routes/ContactUs";
+import { Collection } from ".//Application-routes/Collection";
+import { Home } from ".//Application-routes/Home";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import "./css/styles.css"
 import "./fonts/importedFonts.css";

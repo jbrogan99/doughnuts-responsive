@@ -18,7 +18,7 @@ export const ContactUs = () => {
           ></NavMobile>
         </header>
         <DropDown showResults={showResults}></DropDown>
-        <HeadingOne id="stock-our-stuff" heading="Contact Us"></HeadingOne>
+        <h1 id="stock-our-stuff" className="hero-h1">Contact Us</h1>
         <section id="contact-us-banner-container">
           <img
             src={doughnutBackground}
@@ -29,6 +29,9 @@ export const ContactUs = () => {
           <h2 id="banner-text">
             Doughnut <span>addiction</span> hotline
           </h2>
+         
+          <p>07893778446</p>
+         
         </section>
         <section id="contact-us-para-container">
           <Ptag paragraph="We’re pretty busy baking doughnuts – up to our eyeballs in cookie crumbs and caramel sauce, but you can always give us a call to find out more" />

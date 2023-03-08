@@ -18,10 +18,11 @@
   }
 
   #para-container-our-story {
-    margin: 0 1em 1em 1em;
+    padding-bottom: 1em;
   }
 
-  #para-container-our-story p {
+  #para-container-our-story p:nth-child(-n + 2) {
+    /*first and second child*/
     margin-bottom: 1em;
   }
 
@@ -41,6 +42,7 @@
     font-family: "Rampart One", cursive;
     font-family: "Titan One", cursive;
     font-size: 1.5rem;
+    color: black !important;
   }
 
   h1 {
@@ -143,8 +145,11 @@
     grid-row: 2/3;
     color: white;
     align-self: center;
-    margin: 1em 1em 0 1em;
     font-size: 0.8rem !important;
+  }
+
+  .margin-p-mobile {
+    margin: 1em 1em 0 1em;
   }
 
   #home-description2-desk-container img {
@@ -181,11 +186,6 @@
     height: 100%;
     margin-bottom: 2em;
   }
-
-  .redName-desk {
-    color: red;
-  }
-
   /*blob home page*/
   .inner-wedding {
     display: flex;
@@ -215,6 +215,11 @@
 
   /*end of home page*/
 
+  #cross-over-image-container img {
+    max-width: 80%;
+    max-height: 100%;
+  }
+
   #container-our-story {
     background-image: linear-gradient(
       177deg,
@@ -228,11 +233,16 @@
   }
 
   #about-us-desc-container h2 {
-    color: white;
+    color: black;
   }
+
+  #navLogo h1 {
+    justify-self: center;
+  }
+
   #about-us-desc-container p {
     margin: 0.5em 1em 0.5em 1em;
-    color: white;
+    color: black;
     font-family: "Inika", serif;
     font-family: "Lato", sans-serif;
     font-family: "Roboto", sans-serif;
@@ -243,25 +253,24 @@
   }
 
   #contact-us-para-container p {
-    color: white;
-
     margin: 1.5em 0.5em 1.5em 0.5em;
   }
 
   #banner-img {
-    height: 15em;
+    height: 12em;
     width: 100%;
     opacity: 0.4;
   }
 
   #banner-text span {
-    color: black;
+    color: rebeccapurple;
+    font-size: 2.5rem;
     font-weight: bolder;
   }
 
   #banner-text {
-    top: 0.5em;
     text-align: center;
+    font-size: 2rem;
   }
 
   .redName {
@@ -386,15 +395,6 @@
   #stock-our-stuff {
     padding: 0.5em 0 0.5em 0;
     margin: 0;
-  }
-
-  #heading-description-wholesale-container p,
-  h2 {
-    color: white;
-  }
-
-  #heading-description-wholesale-container p {
-    margin: 0 1em 1em 1em;
   }
 
   /*Positioning*/
@@ -535,13 +535,37 @@
   }
 
   #contact-us-banner-container {
-    position: relative;
     display: flex;
     justify-content: center;
   }
 
+  #contact-us-banner-container p {
+    position: absolute;
+    margin-top: 7.5rem;
+    background-color: black;
+    color: var(--hot-pink);
+    padding: 10px;
+    border-radius: 25px;
+    border: 3px solid var(--hot-pink);
+    font-size: 1.5rem !important;
+    font-weight: bold;
+  }
+
   #banner-text {
     position: absolute;
+  }
+
+  /* #contact-number-container {
+    position: absolute;
+  } */
+
+  #heading-description-wholesale-container h2 {
+    margin: 1em 0 1em 0;
+  }
+
+  #heading-description-wholesale-container p {
+    color: black;
+    margin: 0 1em 1em 1em;
   }
 }
 

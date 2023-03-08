@@ -23,8 +23,10 @@ export const AboutUs = () => {
           ></NavMobile>
         </header>
         <DropDown showResults={showResults}></DropDown>
-        <HeadingOne heading="Our Story"></HeadingOne>
+        <section>
+        <h1 className="hero-h1">Our Story</h1>
         <img src={story} alt="doughnut banner our story" width="100%"></img>
+        </section>
         <section id="about-us-desc-container">
           <HeadingTwo heading="About Us" id="about-us"></HeadingTwo>
           <Ptag paragraph="Down to your final quid? The obvious thing to do is to start making and selling delicious doughnuts. Well, that’s what we did back in 2015 anyway"></Ptag>
@@ -34,13 +36,12 @@ export const AboutUs = () => {
           <CircleDoughnut alt="biscoff doughnut" src={biscoff} />
         </section>
         <section id="cross-over-image-container">
-          <CrossOverImage
+          <img
             src={crossOver}
             alt="man and women eating doughnuts"
-            width="80%"
           />
         </section>
-        <section id="para-container-our-story">
+        <section id="para-container-our-story" className="margin-p-mobile">
           <Ptag
             paragraph="John Simpson and Harriet Jones kicked things off in mum’s kitchen with a tenner and a wok. Before they knew it, they had themselves a
         micro-bakery and their own coffee and doughnut shop in Manchester."

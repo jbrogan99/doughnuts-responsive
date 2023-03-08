@@ -17,6 +17,7 @@ import velvet from "../images/redVelevt.jpg"
 import cookies from "../images/cookies.jpg"
 import { DropDown } from "../navigation/dropdown";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 export const Home = () => {
 
   const images = [sprinkles, biscoff, jam];
@@ -59,9 +60,9 @@ export const Home = () => {
             <img src={images3[currentIndex]} className="fade-in-image" alt="powder sprinkling on doughnut"></img>
           </div>
         <div id="shop-donut-container">
-          <button className="pink-black-btn">
+          <Link to="/collection"><button className="pink-black-btn">
             Shop our Doughnuts
-          </button>
+          </button></Link>
         </div>
           </div>
         </section>
@@ -71,7 +72,7 @@ export const Home = () => {
             {" "}
             Celebrate with something <br /> different!{" "}
           </h2>
-            <p id="home-description-desk">
+            <p id="home-description-desk" className="margin-p-mobile">
               <span id="bold-font">Dipped, dusted </span> and{" "}
               <span id="bold-font">deep-filled doughnuts.</span> Made by hand in
               Manchester, delivered across England, Wales and Scotland!

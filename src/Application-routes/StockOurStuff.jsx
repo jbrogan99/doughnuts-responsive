@@ -26,7 +26,7 @@ export const StockOurStuff = () => {
           ></NavMobile>
         </header>
         <DropDown showResults={showResults}></DropDown>
-        <HeadingOne id="stock-our-stuff" heading="Stock our stuff"></HeadingOne>
+        <h1 id="stock-our-stuff" className="hero-h1">Stock our stuff </h1>
 
         <section id="pic-collage-container">
           <img src={caramel} alt="carmael doughnut" id="caramel" />
@@ -43,16 +43,11 @@ export const StockOurStuff = () => {
           <img src={coffee} alt="coffee doughnut" id="coffee-doughnut" />
         </section>
         <section id="heading-description-wholesale-container">
-          <HeadingTwo heading="Wholesale Doughnuts" />
-          <Ptag
-            paragraph="We’ve already got a number of stockists outside of our stores – including coffee shops and eateries– so why not join the club? You can have our 
-            bright, bold and curvaceous buns to add to your store, offering your customers something extra when you bulk buy wholesale doughnuts."
-          />
-
-          <Ptag
-            paragraph="Whether you need bulk doughnuts or a regular wholesale doughnut supplier, chuck your details in our form and we’ll get back to you. 
-        We’re knee-deep in batter at the moment, but we’ll be in touch about the doughnuts wholesale process"
-          />
+          <h2>Wholesale Doughnuts</h2>
+          <p>We’ve already got a number of stockists outside of our stores – including coffee shops and eateries– so why not join the club? You can have our 
+            bright, bold and curvaceous buns to add to your store, offering your customers something extra when you bulk buy wholesale doughnuts</p>
+          <p>Whether you need bulk doughnuts or a regular wholesale doughnut supplier, chuck your details in our form and we’ll get back to you. 
+            We’re knee-deep in batter at the moment, but we’ll be in touch about the doughnuts wholesale process.</p>
         </section>
       </section>
     </>
