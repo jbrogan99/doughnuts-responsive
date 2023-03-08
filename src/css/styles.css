@@ -215,6 +215,76 @@
 
   /*end of home page*/
 
+  /*collection page */
+  #collection-doughnut-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    /* padding: 3em; */
+    /* padding: 0 1em 0 1em; */
+    background-color: var(--light-purple);
+  }
+  #container-stock-our-stuff h2 {
+    padding: 1em;
+    justify-self: center;
+  }
+
+  #caramel {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  #raspberry {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  #biscoff {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  #biscoff-cookie {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  #coffee {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  #velvet {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  #lemon {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  #hazelnut {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+
+  #one-of-a-kind {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+
+  #caramel-delight {
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+
+  #collection-heading {
+    margin-top: 0.5em;
+  }
+
+  /*end of collection page*/
+
   #cross-over-image-container img {
     max-width: 80%;
     max-height: 100%;
