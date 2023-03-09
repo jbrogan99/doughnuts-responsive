@@ -3,33 +3,32 @@ import { NavMobile } from "../navigation/nav_logo";
 import { useState } from "react";
 import { DropDown } from "../navigation/dropdown";
 import story from "../images/our-story.jpg";
-import { CircleDoughnut } from "../Circle-Doughnut/CircleDoughnut";
-import jam from "../images/jam-min.jpg";
-import biscoff from "../images/biscoff-min.jpg";
+import { NavDesktop } from "../navigation/NavDesktop";
+import jam from "../cropped_img_new/jam-min-modified-min.png";
+import biscoff from "../cropped_img_new/biscoff-min-modified-min.png";
 import crossOver from "../images/pink_bkground_man_women-min.png";
 export const AboutUs = () => {
   const [showResults, setShowResults] = useState(false);
   return (
     <>
       <section id="container-our-story">
-        <header id="navLogo">
-          <NavMobile
-            setShowResults={setShowResults}
-            showResults={showResults}
-          ></NavMobile>
-        </header>
+      <NavMobile setShowResults={setShowResults} showResults={showResults}/>
+      <DropDown showResults={showResults}></DropDown>
+      <NavDesktop />   
         <DropDown showResults={showResults}></DropDown>
-        <section>
-        <h1 className="hero-h1">Our Story</h1>
-        <img src={story} alt="doughnut banner our story" width="100%"></img>
+        <section id="banner-hero-container">
+        <img src={story} id="story-img" alt="doughnut banner our story" width="100%"></img>
+        <div className="text-overlay">    
+         <h1 className="hero-h1">Our Story</h1>
+         </div>
         </section>
         <section id="about-us-desc-container">
           <h2 id="about-us">About Us</h2>
-          <p>Down to your final quid? The obvious thing to do is to start making and selling delicious doughnuts. Well, that’s what we did back in 2015 anyway</p>
+          <p>Down to your final quid? The obvious thing to do is to start making and selling delicious doughnuts. Well, that’s what we did back in 2015 anyway.</p>
         </section>
         <section id="images-container-doughnuts">
-          <CircleDoughnut alt="jam doughnut" src={jam} />
-          <CircleDoughnut alt="biscoff doughnut" src={biscoff} />
+         <img src={jam} alt="jam doughnut"/>
+         <img src={biscoff} alt="biscoff doughnut"/>
         </section>
         <section id="cross-over-image-container">
           <img

@@ -2,6 +2,7 @@ import React from "react";
 import { NavMobile } from "../navigation/nav_logo";
 import { useState } from "react";
 import { DropDown } from "../navigation/dropdown";
+import {NavDesktop} from "../navigation/NavDesktop"
 import caramel from "../cropped_img_new/caramel-modified-min.png"
 import raspberry from "../cropped_img_new/jam-min-modified-min.png"
 import biscoffCookie from "../cropped_img_new/biscoff-cookie-modified-min.png"
@@ -20,15 +21,14 @@ export const Collection = () => {
   return (
     <>
       <section id="container-stock-our-stuff">
-        <header id="navLogo">
-          <NavMobile
-            setShowResults={setShowResults}
-            showResults={showResults}
-          ></NavMobile>
-        </header>
+      <NavMobile setShowResults={setShowResults} showResults={showResults}/>
+      <DropDown showResults={showResults}></DropDown>
+      <NavDesktop />  
         <DropDown showResults={showResults}></DropDown>
         <h1 id="collection-heading" className="hero-h1">Doughnuts</h1>
+        <div id="extensive-range-container">
         <h2>Find our extensive range below</h2>
+        </div>
         <section id="collection-doughnut-container">
           <CircleDoughnut src={caramel} children="Caramel oozer" id="caramel" alt="caramel doughnut" />
           <CircleDoughnut src={raspberry} children="Raspberry oozer" id="raspberry" alt="raspberry doughnut" />

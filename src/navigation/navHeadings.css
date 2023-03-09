@@ -1,21 +1,27 @@
-.nav-headings-container-desk li {
+.nav-headings-container-desk li a {
   color: white;
   list-style-type: none;
   font-size: 1.5em;
+  text-decoration: none;
+}
+
+.nav-headings-container-desk li a:hover {
+  color: rgb(255, 142, 161);
 }
 
 .nav-headings-container-desk {
   display: flex;
   width: 100%;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .nav-headings-container-desk li:first-child {
   margin-left: 10em;
 }
 
-.nav-headings-container-desk li:last-child {
-  margin-right: 2em;
+.active-nav a {
+  color: var(--hot-pink) !important;
 }

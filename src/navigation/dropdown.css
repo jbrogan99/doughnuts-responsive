@@ -22,3 +22,9 @@
   margin: 0;
   border-top: 1px solid white;
 }
+
+.navText a {
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+}

@@ -22,23 +22,17 @@ export const Home = () => {
   const images = [sprinkles, biscoff, jam];
   const images2 = [hazelnut, caramel, velvet];
   const images3 = [lemon, coffee, cookies];
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [transition, setTransition] = useState(false)
   const [showResults, setShowResults] = useState(false);
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            if(currentIndex === images.length - 1) {
-                setCurrentIndex(0);
-                setTransition(true)
-            } 
-            else {
-                 setCurrentIndex(currentIndex + 1);
-                 setTransition(true)
-            }
-        }, 5000)
-        
-        return () => clearInterval(intervalId);
-    }, [currentIndex, images.length])
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <>
   <section className="background-desktop">
@@ -54,9 +48,43 @@ export const Home = () => {
         </div>
           <div className="background-color-0">
           <div id="doughnut-image-container-desk">
-            <img src={images[currentIndex]} className={`fade-in-image ${transition ? 'fade-in-image2' : 'fade-in-image2'}`} alt="powder sprinkling on doughnut"></img>
-            <img src={images2[currentIndex]} className="fade-in-image" alt="powder sprinkling on doughnut"></img>
-            <img src={images3[currentIndex]} className="fade-in-image" alt="powder sprinkling on doughnut"></img>
+          <div id="images1">
+            {images.map((imageUrl, index) => (
+              <img
+                key={index}
+                src={imageUrl}
+                alt={`Image ${index + 1}`}
+                className={`carousel-image ${
+                  currentImageIndex === index ? "active" : ""
+                }`}
+              />
+            ))}
+        </div>
+        <div id="images2">
+        {images2.map((imageUrl, index) => (
+              <img
+                key={index}
+                src={imageUrl}
+                alt={`Image ${index + 1}`}
+                className={`carousel-image ${
+                  currentImageIndex === index ? "active" : ""
+                }`}
+              />
+            ))}
+        </div>
+        <div id="images3">
+        {images3.map((imageUrl, index) => (
+              <img
+                key={index}
+                src={imageUrl}
+                alt={`Image ${index + 1}`}
+                className={`carousel-image ${
+                  currentImageIndex === index ? "active" : ""
+                }`}
+              />
+            ))}
+        </div>
+
           </div>
         <div id="shop-donut-container">
           <Link to="/collection"><button className="pink-black-btn">
@@ -88,19 +116,12 @@ export const Home = () => {
         We even hand-make vegan doughnuts</p>
         </Blob>
 
-          <div id="cross-over-image-container">
-            <CrossOverImage
-              id="cross-over-image-desk"
-              src={coffee}
-              alt="coffee doughnut"
-            />
-          </div>
           <aside id="peek-inside-bakery-container">
             <div>
               <h2>Take a peek inside <br /> our Manchester bakery</h2>
             </div>
             <section id="video-wrapper">
-              <video controls width="70%">
+              <video controls>
                 <source src={video} type="video/webm"></source>
               </video>
             </section>
