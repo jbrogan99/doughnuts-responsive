@@ -3,20 +3,18 @@ import { NavMobile } from "../navigation/nav_logo";
 import { useState } from "react";
 import { DropDown } from "../navigation/dropdown";
 import doughnutBackground from "../images/cartoon_doughnuts_falling-min.jpg";
+import {NavDesktop} from "../navigation/NavDesktop"
 export const ContactUs = () => {
   const [showResults, setShowResults] = useState(false);
   return (
     <>
       <section id="container-contact-us">
-        <header id="navLogo">
-          <NavMobile
-            setShowResults={setShowResults}
-            showResults={showResults}
-          ></NavMobile>
-        </header>
-        <DropDown showResults={showResults}></DropDown>
+      <NavMobile setShowResults={setShowResults} showResults={showResults}/>
+      <DropDown showResults={showResults}></DropDown>
+      <NavDesktop />  
         <h1 id="stock-our-stuff" className="hero-h1">Contact Us</h1>
         <section id="contact-us-banner-container">
+       
           <img
             src={doughnutBackground}
             alt="doughnut background"

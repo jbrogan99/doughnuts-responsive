@@ -396,7 +396,7 @@ button {
   padding: 0 2em 2em 2em;
 }
 .pink-black-btn {
-  padding: 20px;
+  padding: 10px;
   border-radius: 25px;
   border: 3px solid var(--hot-pink);
 }
@@ -514,6 +514,11 @@ button {
   flex-direction: column;
   background-color: var(--light-purple);
 }
+
+#heading-description-wholesale-container h2 {
+  text-align: center;
+}
+
 #pic-collage-container {
   display: grid;
   grid-template-columns: 30% 20% 20% 30%;
@@ -692,16 +697,16 @@ button {
 
 #extensive-range-container {
   background-color: black;
-  border: 3px solid var(--hot-pink);
+  border-top: 3px solid var(--hot-pink);
 }
 
 /* #contact-number-container {
     position: absolute;
   } */
 
-#heading-description-wholesale-container h2 {
+/* #heading-description-wholesale-container h2 {
   margin: 1em 0 1em 0;
-}
+} */
 
 #heading-description-wholesale-container p {
   color: black;
@@ -823,6 +828,20 @@ button {
     grid-row: 1/2;
   }
 
+  #images2 {
+    display: block;
+    position: relative;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  #images3 {
+    position: relative;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display: block;
+  }
+
   .carousel-image {
     position: absolute;
     object-fit: cover;
@@ -831,25 +850,6 @@ button {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
   }
-
-  #images2 {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    height: 40vh;
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-
-  #images3 {
-    position: relative;
-    height: 40vh;
-    grid-column: 3/4;
-    grid-row: 1/2;
-    display: block;
-    overflow: hidden;
-  }
-
   #celebrate-container {
     background-image: url("../images/d-background-cropped.jpg");
     background-size: 100% 100%;
@@ -984,13 +984,82 @@ button {
   #collection-doughnut-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 3, 1fr;
+    grid-template-rows: repeat(3, 1fr);
   }
 
+  .doughnut-img-desc {
+    padding: 4em;
+  }
   #caramel {
     grid-column: 1/2;
     grid-row: 1/2;
   }
 
+  #raspberry {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  #biscoff-cookie {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  #biscoff {
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+
+  #coffee {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  #velvet {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  #lemon {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+
+  #hazelnut {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+
+  #one-of-a-kind {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  #caramel-delight {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+
   /*end of collection page*/
+
+  #heading-description-wholesale-container {
+    padding: 2em;
+  }
+
+  #heading-description-wholesale-container p:first-child {
+    margin-bottom: 1em;
+  }
+
+  /*contact us */
+
+  #contact-us-banner-container img {
+    height: 40vh;
+  }
+
+  #banner-text {
+    position: absolute;
+    margin-top: 1em;
+  }
+
+  /*end of contact us*/
 }

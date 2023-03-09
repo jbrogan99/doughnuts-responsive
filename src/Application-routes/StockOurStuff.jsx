@@ -10,19 +10,17 @@ import hazelnut from "../images/hazlenut.jpg";
 import sprinkles from "../images/sprinkles-min.jpg";
 import lemon from "../images/lemon.jpg";
 import coffee from "../images/coffee-min.jpg";
-
+import {NavDesktop} from "../navigation/NavDesktop"
 export const StockOurStuff = () => {
   const [showResults, setShowResults] = useState(false);
+
   return (
     <>
       <section id="container-stock-our-stuff">
-        <header id="navLogo">
-          <NavMobile
-            setShowResults={setShowResults}
-            showResults={showResults}
-          ></NavMobile>
-        </header>
-        <DropDown showResults={showResults}></DropDown>
+       <NavMobile setShowResults={setShowResults} showResults={showResults}/>
+      <DropDown showResults={showResults}></DropDown>
+      <NavDesktop />
+        
         <h1 id="stock-our-stuff" className="hero-h1">Stock our stuff </h1>
 
         <section id="pic-collage-container">

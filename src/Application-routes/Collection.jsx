@@ -24,7 +24,7 @@ export const Collection = () => {
       <NavMobile setShowResults={setShowResults} showResults={showResults}/>
       <DropDown showResults={showResults}></DropDown>
       <NavDesktop />  
-        <DropDown showResults={showResults}></DropDown>
+       
         <h1 id="collection-heading" className="hero-h1">Doughnuts</h1>
         <div id="extensive-range-container">
         <h2>Find our extensive range below</h2>
