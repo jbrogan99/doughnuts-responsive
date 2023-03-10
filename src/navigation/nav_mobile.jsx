@@ -4,13 +4,13 @@ import { Logo } from "../logo/logo";
 export const NavMobile = ({ setShowResults, showResults }) => {
   return (
     <>
-      <header id="navMobileContainer">
+      <div id="navMobileContainer">
         <Logo></Logo>
         <HamburgerDropdown
           setShowResults={setShowResults}
           showResults={showResults}
         ></HamburgerDropdown>
-      </header>
+      </div>
     </>
   );
 };

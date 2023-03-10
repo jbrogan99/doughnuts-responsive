@@ -14,7 +14,9 @@ function App() {
   return (
     <>
       <Router>
-        <Navigation activePage={activePage} setActivePage={setActivePage} />
+        <header>
+          <Navigation activePage={activePage} setActivePage={setActivePage} />
+        </header>
         <Routes>
           <Route
             path="/"

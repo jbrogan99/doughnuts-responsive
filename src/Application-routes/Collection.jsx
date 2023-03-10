@@ -1,8 +1,4 @@
 import React from "react";
-import { NavMobile } from "../navigation/nav_mobile";
-import { useState } from "react";
-import { DropDown } from "../navigation/dropdown";
-import { NavDesktop } from "../navigation/NavDesktop";
 import caramel from "../cropped_img_new/caramel-modified-min.png";
 import raspberry from "../cropped_img_new/jam-min-modified-min.png";
 import biscoffCookie from "../cropped_img_new/biscoff-cookie-modified-min.png";
@@ -16,43 +12,48 @@ import caramel_delight from "../cropped_img_new/sprinkles-min-modified-min.png";
 import { CircleDoughnut } from "../Circle-Doughnut/CircleDoughnut";
 import { Sprinkles } from "../sprinkles/sprinkles";
 export const Collection = () => {
-  const [showResults, setShowResults] = useState(false);
   return (
     <>
-      <section id="container-stock-our-stuff">
-        <Sprinkles>
-          <h1 id="collection-heading" className="hero-h1">
-            Doughnuts
-          </h1>
-        </Sprinkles>
+      <div id="container-stock-our-stuff">
+        <section>
+          <Sprinkles>
+            <h1 id="collection-heading" className="hero-h1">
+              Doughnuts
+            </h1>
+          </Sprinkles>
+        </section>
         <div id="extensive-range-container">
           <h2>Find our extensive range below</h2>
         </div>
-        <section id="collection-doughnut-container">
+        <main id="collection-doughnut-container">
           <CircleDoughnut
             src={caramel}
             children="Caramel oozer"
             id="caramel"
             alt="caramel doughnut"
           />
+
           <CircleDoughnut
             src={raspberry}
             children="Raspberry oozer"
             id="raspberry"
             alt="raspberry doughnut"
           />
+
           <CircleDoughnut
             src={biscoffCookie}
             children="Biscoff Cookie"
             id="biscoff-cookie"
             alt="biscoff cookie"
           />
+
           <CircleDoughnut
             src={biscoff}
             children="Biscoff Delight"
             id="biscoff"
             alt="biscoff doughnut"
           />
+
           <CircleDoughnut
             src={coffee}
             children="Coffee Delight"
@@ -89,8 +90,8 @@ export const Collection = () => {
             id="caramel-delight"
             alt="Caramel Delight doughnut"
           />
-        </section>
-      </section>
+        </main>
+      </div>
     </>
   );
 };

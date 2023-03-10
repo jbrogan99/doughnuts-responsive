@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import caramel from "../images/caramel.jpg";
 import redVelvet from "../images/redVelevt.jpg";
 import cake from "../images/cake1.jpg";
@@ -12,39 +11,47 @@ import { Sprinkles } from "../sprinkles/sprinkles";
 export const StockOurStuff = () => {
   return (
     <>
-      <section id="container-stock-our-stuff">
-        <Sprinkles>
-          <h1 id="stock-our-stuff" className="hero-h1">
-            Stock our stuff{" "}
-          </h1>
-        </Sprinkles>
-        <section id="pic-collage-container">
-          <img src={caramel} alt="carmael doughnut" id="caramel-stock" />
-          <img
-            src={redVelvet}
-            alt="red velvet doughnut"
-            id="red-velvet-stock"
-          />
-          <img src={cake} alt="strawberry cake" id="cake-stock" />
-          <img
-            src={cookieBiscoff}
-            alt="biscoff cookie"
-            id="biscoff-cookie-stock"
-          />
-          <img
-            src={hazelnut}
-            alt="hazelnut doughnut"
-            id="hazelnut-doughnut-stock"
-          />
-          <img
-            src={sprinkles}
-            alt="sprinkled iceing sugar onto caramel doughnut"
-            id="sprinkled-doughnut-stock"
-          />
-          <img src={lemon} alt="lemon doughnut" id="lemon-doughnut-stock" />
-          <img src={coffee} alt="coffee doughnut" id="coffee-doughnut-stock" />
+      <div id="container-stock-our-stuff">
+        <section>
+          <Sprinkles>
+            <h1 id="stock-our-stuff" className="hero-h1">
+              Stock our stuff
+            </h1>
+          </Sprinkles>
         </section>
-        <section id="heading-description-wholesale-container">
+        <section>
+          <figure id="pic-collage-container">
+            <img src={caramel} alt="carmael doughnut" id="caramel-stock" />
+            <img
+              src={redVelvet}
+              alt="red velvet doughnut"
+              id="red-velvet-stock"
+            />
+            <img src={cake} alt="strawberry cake" id="cake-stock" />
+            <img
+              src={cookieBiscoff}
+              alt="biscoff cookie"
+              id="biscoff-cookie-stock"
+            />
+            <img
+              src={hazelnut}
+              alt="hazelnut doughnut"
+              id="hazelnut-doughnut-stock"
+            />
+            <img
+              src={sprinkles}
+              alt="sprinkled iceing sugar onto caramel doughnut"
+              id="sprinkled-doughnut-stock"
+            />
+            <img src={lemon} alt="lemon doughnut" id="lemon-doughnut-stock" />
+            <img
+              src={coffee}
+              alt="coffee doughnut"
+              id="coffee-doughnut-stock"
+            />
+          </figure>
+        </section>
+        <main id="heading-description-wholesale-container">
           <h2>Wholesale Doughnuts</h2>
           <p>
             We’ve already got a number of stockists outside of our stores –
@@ -59,8 +66,8 @@ export const StockOurStuff = () => {
             We’re knee-deep in batter at the moment, but we’ll be in touch about
             the doughnuts wholesale process.
           </p>
-        </section>
-      </section>
+        </main>
+      </div>
     </>
   );
 };

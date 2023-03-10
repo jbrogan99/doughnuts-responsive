@@ -1075,8 +1075,12 @@ button {
 
   /*contact us */
 
-  #contact-us-banner-container img {
+  #contact-us-banner-container figure img {
     height: 40vh;
+  }
+
+  #fig-container {
+    width: 100%;
   }
 
   #banner-text {

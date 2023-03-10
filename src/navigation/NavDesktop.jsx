@@ -5,13 +5,13 @@ import "./navDesktop.css";
 export const NavDesktop = ({ activePage, setActivePage }) => {
   return (
     <>
-      <header className="nav-header-container">
+      <div className="nav-header-container">
         <Logo></Logo>
         <NavHeadings
           activePage={activePage}
           setActivePage={setActivePage}
         ></NavHeadings>
-      </header>
+      </div>
     </>
   );
 };

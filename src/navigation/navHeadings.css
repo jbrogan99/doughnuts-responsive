@@ -18,6 +18,10 @@
   list-style-type: none;
 }
 
+#nav-desk {
+  width: 100%;
+}
+
 .nav-headings-container-desk li:first-child {
   margin-left: 10em;
 }
