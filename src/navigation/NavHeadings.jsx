@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import "./navHeadings.css";
 import { Link } from "react-router-dom";
 
-export const NavHeadings = () => {
-  const [activePage, setActivePage] = useState("home");
-
+export const NavHeadings = ({ activePage, setActivePage }) => {
   const handleClick = (page) => {
     setActivePage(page);
   };

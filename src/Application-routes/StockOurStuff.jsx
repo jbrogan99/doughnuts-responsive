@@ -4,7 +4,7 @@ import caramel from "../images/caramel.jpg";
 import redVelvet from "../images/redVelevt.jpg";
 import cake from "../images/cake1.jpg";
 import cookieBiscoff from "../images/biscoff-cookie.jpg";
-import hazelnut from "../images/hazlenut.jpg";
+import hazelnut from "../images/hazlenut-min.jpg";
 import sprinkles from "../images/sprinkles-min.jpg";
 import lemon from "../images/lemon.jpg";
 import coffee from "../images/coffee-min.jpg";

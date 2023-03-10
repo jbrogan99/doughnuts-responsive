@@ -1,5 +1,5 @@
 import React from "react";
-import story from "../images/our-story.jpg";
+
 import jam from "../cropped_img_new/jam-min-modified-min.png";
 import biscoff from "../cropped_img_new/biscoff-min-modified-min.png";
 import crossOver from "../images/pink_bkground_man_women-min.png";

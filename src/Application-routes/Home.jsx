@@ -4,7 +4,7 @@ import { Sprinkles } from "../sprinkles/sprinkles";
 import video from "../video/video.mp4";
 import coffee from "../images/coffee-min.jpg";
 import sprinkles from "../images/sprinkles-min.jpg";
-import hazelnut from "../images/hazlenut.jpg";
+import hazelnut from "../images/hazlenut-min.jpg";
 import lemon from "../images/lemon.jpg";
 import biscoff from "../images/biscoff-min.jpg";
 import caramel from "../images/caramel.jpg";
