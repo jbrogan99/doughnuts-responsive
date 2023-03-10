@@ -64,7 +64,8 @@ p {
   font-size: 1rem !important;
 }
 
-button {
+button,
+.pink-black-btn {
   font-family: "Kanit", sans-serif;
   font-family: "Rampart One", cursive;
   font-family: "Titan One", cursive;
@@ -389,19 +390,21 @@ button {
   color: red;
 }
 
-#shop-donut-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 2em;
-}
-
 #button-container {
   padding: 0 2em 2em 2em;
 }
 .pink-black-btn {
+  text-decoration: none;
+  text-align: center;
   padding: 10px;
   border-radius: 25px;
   border: 3px solid var(--hot-pink);
+}
+
+#shop-donut-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
 }
 
 .pink-black-btn::after {
@@ -668,6 +671,7 @@ button {
 }
 
 #cross-over-image-container {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   display: flex;
   justify-content: center;
   background-image: linear-gradient(177deg, white 50%, #fdefff calc(50% + 2px));
@@ -689,13 +693,12 @@ button {
 
 #contact-us-banner-container p {
   position: absolute;
-  margin-top: 7.8rem;
+  margin-top: 6.8rem;
   background-color: black;
   color: var(--hot-pink);
   padding: 5px;
-  border-radius: 25px;
   border: 3px solid var(--hot-pink);
-  font-size: 1.5rem !important;
+  font-size: 2rem !important;
   font-weight: bold;
 }
 
@@ -730,7 +733,6 @@ button {
 /*Desktop*/
 
 @media only screen and (min-width: 801px) {
-  /*Home page*/
   /*generic tags*/
 
   h2 {
@@ -748,24 +750,14 @@ button {
 
   /*end of generic tags*/
 
+  /*Home page*/
+
   .hero-h1 {
     text-align: center;
   }
-  /* 
-  #doughnut-image-container-desk img:nth-child(2) {
-    display: block;
-  }
 
-  #doughnut-image-container-desk img:nth-child(3) {
-    display: block;
-  } */
   #navMobileContainer {
     display: none;
-  }
-
-  #story-img {
-    height: 35vh;
-    opacity: 0.3;
   }
 
   .text-overlay {
@@ -803,6 +795,9 @@ button {
   #cross-over-image-container img {
     width: 30%;
     border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
 
   #video-wrapper video {
@@ -1069,7 +1064,7 @@ button {
   /*end of collection page*/
 
   #heading-description-wholesale-container {
-    padding: 2em;
+    padding: 0 2em 2em 2em;
   }
 
   #heading-description-wholesale-container p:first-child {
@@ -1078,7 +1073,7 @@ button {
 
   /*contact us */
 
-  #contact-us-banner-container figure img {
+  #contact-us-banner-container img {
     height: 40vh;
   }
 
@@ -1089,6 +1084,11 @@ button {
   #banner-text {
     position: absolute;
     margin-top: 1em;
+  }
+
+  #contact-us-banner-container p {
+    margin-top: 5em;
+    font-size: 3em !important;
   }
 
   /*end of contact us*/
