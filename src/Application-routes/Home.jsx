@@ -13,7 +13,7 @@ import velvet from "../images/redVelevt.jpg";
 import cookies from "../images/cookies.jpg";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-export const Home = () => {
+export const Home = ({ activePage, setActivePage }) => {
   const images = [sprinkles, biscoff, jam];
   const images2 = [hazelnut, caramel, velvet];
   const images3 = [lemon, coffee, cookies];
@@ -27,6 +27,10 @@ export const Home = () => {
     }, 5000);
     return () => clearInterval(interval);
   }, []);
+
+  const handleClick = (page) => {
+    setActivePage(page);
+  };
   return (
     <>
       <section className="background-desktop">
@@ -78,7 +82,12 @@ export const Home = () => {
               </div>
               <div id="shop-donut-container">
                 <Link to="/collection">
-                  <button className="pink-black-btn">Shop our Doughnuts</button>
+                  <button
+                    className="pink-black-btn"
+                    onClick={() => setActivePage("doughnut")}
+                  >
+                    Shop our Doughnuts
+                  </button>
                 </Link>
               </div>
             </div>

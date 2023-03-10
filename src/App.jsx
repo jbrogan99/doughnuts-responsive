@@ -10,12 +10,18 @@ import "./css/styles.css";
 import "./fonts/importedFonts.css";
 
 function App() {
+  const [activePage, setActivePage] = useState("home");
   return (
     <>
       <Router>
-        <Navigation />
+        <Navigation activePage={activePage} setActivePage={setActivePage} />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route
+            path="/"
+            element={
+              <Home activePage={activePage} setActivePage={setActivePage} />
+            }
+          />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/collection" element={<Collection />} />
           <Route path="/contact" element={<ContactUs />} />

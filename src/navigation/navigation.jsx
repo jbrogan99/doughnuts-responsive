@@ -4,9 +4,9 @@ import { NavMobile } from "./nav_mobile";
 import { DropDown } from "./dropdown";
 import { useState } from "react";
 
-export const Navigation = () => {
+export const Navigation = ({ activePage, setActivePage }) => {
   const [showResults, setShowResults] = useState(false);
-  const [activePage, setActivePage] = useState("home");
+
   return (
     <>
       <NavMobile setShowResults={setShowResults} showResults={showResults} />
@@ -14,6 +14,7 @@ export const Navigation = () => {
         showResults={showResults}
         activePage={activePage}
         setActivePage={setActivePage}
+        setShowResults={setShowResults}
       ></DropDown>
       <NavDesktop activePage={activePage} setActivePage={setActivePage} />
     </>
