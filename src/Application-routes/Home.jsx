@@ -1,9 +1,6 @@
 import React from "react";
-import { NavDesktop } from "../navigation/NavDesktop";
 import { Blob } from "../blob/blob";
 import { Sprinkles } from "../sprinkles/sprinkles";
-import { CrossOverImage } from "../crossoverImage/CrossoverImage";
-import { NavMobile } from "../navigation/nav_logo";
 import video from "../video/video.mp4";
 import coffee from "../images/coffee-min.jpg";
 import sprinkles from "../images/sprinkles-min.jpg";
@@ -14,14 +11,12 @@ import caramel from "../images/caramel.jpg";
 import jam from "../images/jam-min.jpg";
 import velvet from "../images/redVelevt.jpg";
 import cookies from "../images/cookies.jpg";
-import { DropDown } from "../navigation/dropdown";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 export const Home = () => {
   const images = [sprinkles, biscoff, jam];
   const images2 = [hazelnut, caramel, velvet];
   const images3 = [lemon, coffee, cookies];
-  // const [showResults, setShowResults] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
