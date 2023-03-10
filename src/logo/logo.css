@@ -1,4 +1,4 @@
-#logo-container {
+.logo-container-desk {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -12,7 +12,7 @@
   color: white;
 }
 
-#logo_img {
+.logo_img {
   margin-top: 0.2em;
   width: fit-content;
 }

@@ -8,7 +8,6 @@ export const HamburgerDropdown = ({ setShowResults, showResults }) => {
       <img
         src={hamburger_menu}
         alt="hamburger menu"
-        width="35em"
         onClick={() => setShowResults(!showResults)}
         id="hamburger"
       />

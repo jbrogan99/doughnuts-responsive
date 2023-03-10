@@ -78,13 +78,12 @@ export const Home = ({ activePage, setActivePage }) => {
                 </figure>
               </div>
               <div id="shop-donut-container">
-                <Link to="/collection">
-                  <button
-                    className="pink-black-btn"
-                    onClick={() => setActivePage("doughnut")}
-                  >
-                    Shop our Doughnuts
-                  </button>
+                <Link
+                  to="/collection"
+                  onClick={() => setActivePage("doughnut")}
+                  className="pink-black-btn"
+                >
+                  Shop our Doughnuts
                 </Link>
               </div>
             </div>
@@ -97,9 +96,10 @@ export const Home = ({ activePage, setActivePage }) => {
                 Celebrate with something <br /> different!{" "}
               </h2>
               <p id="home-description-desk" className="margin-p-mobile">
-                <span id="bold-font">Dipped, dusted </span> and{" "}
-                <span id="bold-font">deep-filled doughnuts.</span> Made by hand
-                in Manchester, delivered across England, Wales and Scotland!
+                <span className="bold-font">Dipped, dusted </span> and{" "}
+                <span className="bold-font">deep-filled doughnuts.</span> Made
+                by hand in Manchester, delivered across England, Wales and
+                Scotland!
               </p>
             </section>
             <section id="home-description2-desk-container">
