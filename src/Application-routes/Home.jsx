@@ -138,9 +138,9 @@ export const Home = ({ activePage, setActivePage }) => {
               </h2>
               <p id="ptagColours">
                 Obey your rumble and tuck in at any of our
-                <span className="redName">Manchester, Stockport, Bolton </span>
+                <span className="redName"> Manchester, Stockport, Bolton </span>
                 or
-                <span className="redName"> Bury</span> stores -either box it up
+                <span className="redName"> Bury</span> stores - either box it up
                 and go, or stick around with a coffee, it’s totally up to you.
                 Not near a store? Fear not! Doughnuts Delivered lets you get
                 your favourite doughnut flavours right to your door!

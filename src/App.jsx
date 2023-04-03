@@ -11,6 +11,7 @@ import "./fonts/importedFonts.css";
 
 function App() {
   const [activePage, setActivePage] = useState("home");
+  console.log("active page", activePage);
   return (
     <>
       <Router>
