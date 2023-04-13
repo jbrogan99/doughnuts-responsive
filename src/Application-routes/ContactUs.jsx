@@ -13,11 +13,6 @@ export const ContactUs = () => {
           </Sprinkles>
         </section>
         <main id="contact-us-banner-container">
-          <img
-            src={doughnutBackground}
-            alt="doughnut background"
-            id="banner-img"
-          />
           <h2 id="banner-text">
             Doughnut <span>addiction</span> hotline
           </h2>

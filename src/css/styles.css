@@ -268,6 +268,11 @@ button,
 
 /*collection page */
 
+#extensive-range-container {
+  display: flex;
+  justify-content: center;
+}
+
 #container-stock-our-stuff h2 {
   padding: 1em;
   justify-self: center;
@@ -707,27 +712,34 @@ button,
 #contact-us-banner-container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  border: 5px dotted var(--hot-pink);
+  border-radius: 25px;
+  padding: 1em;
+  gap: 1em;
 }
 
 #contact-us-banner-container p {
-  position: absolute;
-  margin-top: 6.8rem;
-  background-color: black;
+  width: fit-content;
   color: var(--hot-pink);
   padding: 5px;
-  border: 3px solid var(--hot-pink);
+
+  text-decoration: underline 1px;
   font-size: 2rem !important;
   font-weight: bold;
+  align-self: center;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 #banner-text {
-  position: absolute;
   color: var(--hot-pink) !important;
 }
 
 #extensive-range-container {
-  background-color: black;
-  border-top: 3px solid var(--hot-pink);
+  background-color: var(--light-purple);
+}
+
+#extensive-range-container h2 {
 }
 
 /* #contact-number-container {
@@ -844,7 +856,7 @@ button,
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    margin: 1em 3em 1em 3em;
+    margin: 0em 3em 1em 3em;
     border: 5px dotted var(--hot-pink);
     border-radius: 25px;
     padding: 1em;
@@ -1034,7 +1046,7 @@ button,
 
   /*stock ouf stuff page*/
   #pic-collage-container {
-    margin: 0 10% 5% 10%;
+    margin: 0 10% 0% 10%;
     height: 80vh;
   }
 
@@ -1131,21 +1143,24 @@ button,
 
   /*contact us */
 
-  #contact-us-banner-container img {
-    height: 40vh;
+  #contact-us-banner-container {
+    margin: 0 15% 1em 15%;
+    height: 100%;
+  }
+
+  #contact-us-banner-container p {
+    font-size: 2.5rem !important;
+  }
+
+  #contact-us-para-container {
+    padding: 1em 2em 1em 2em;
   }
 
   #fig-container {
     width: 100%;
   }
 
-  #banner-text {
-    position: absolute;
-    margin-top: 1em;
-  }
-
-  #contact-us-banner-container p {
-    margin-top: 3em;
+  #banner-text p {
     font-size: 3em !important;
   }
 
