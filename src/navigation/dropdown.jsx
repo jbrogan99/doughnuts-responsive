@@ -19,7 +19,7 @@ export const DropDown = ({
     <>
       {showResults ? (
         <>
-          <nav>
+          <nav className="drop-down-nav-mobile">
             <ul className="text-image-nav-container">
               <li
                 className={`${

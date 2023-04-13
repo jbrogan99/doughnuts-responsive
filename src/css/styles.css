@@ -277,7 +277,6 @@ button,
   padding: 1em;
   justify-self: center;
   color: var(--hot-pink) !important;
-  text-shadow: none !important;
 }
 /* 
 #caramel {
@@ -744,6 +743,7 @@ button,
 }
 
 #extensive-range-container h2 {
+  text-shadow: 2px 2px #000;
 }
 
 /* #contact-number-container {
@@ -817,6 +817,9 @@ button,
   }
 
   #navMobileContainer {
+    display: none;
+  }
+  .drop-down-nav-mobile {
     display: none;
   }
 
