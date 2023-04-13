@@ -1,8 +1,8 @@
 import React from "react";
 
-import jam from "../cropped_img_new/jam-min-modified-min.png";
-import biscoff from "../cropped_img_new/biscoff-min-modified-min.png";
-import crossOver from "../images/pink_bkground_man_women-min.png";
+import jam from "../images-200-about/jam.jpg";
+import hazel from "../images-200-about/hazel.jpg";
+import crossOver from "../images-200-about/pink_bkground_man_women-min.png";
 import { Sprinkles } from "../sprinkles/sprinkles";
 export const AboutUs = () => {
   return (
@@ -24,7 +24,7 @@ export const AboutUs = () => {
           </div>
           <figure id="images-container-doughnuts">
             <img src={jam} alt="jam doughnut" />
-            <img src={biscoff} alt="biscoff doughnut" />
+            <img src={hazel} alt="biscoff doughnut" />
           </figure>
         </section>
         <figure id="cross-over-image-container">

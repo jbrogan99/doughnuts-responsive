@@ -61,7 +61,7 @@ h1 {
 
 p {
   line-height: 1.4;
-  font-size: 1rem !important;
+  font-size: 1rem;
 }
 
 button,
@@ -123,6 +123,22 @@ button,
 
   #images3 {
     display: none;
+  }
+
+  #collection-doughnut-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .circle-doughnut {
+    width: 120px;
+    height: 120px;
+  }
+
+  .desc-container-circle p {
+    font-size: 0.7em !important;
   }
 }
 #navMobileContainer {
@@ -251,21 +267,14 @@ button,
 /*end of home page*/
 
 /*collection page */
-#collection-doughnut-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  /* padding: 3em; */
-  /* padding: 0 1em 0 1em; */
-  background-color: var(--light-purple);
-}
+
 #container-stock-our-stuff h2 {
   padding: 1em;
   justify-self: center;
   color: var(--hot-pink) !important;
   text-shadow: none !important;
 }
-
+/* 
 #caramel {
   grid-column: 1/2;
   grid-row: 1/2;
@@ -322,7 +331,7 @@ button,
 
 #collection-heading {
   margin-top: 0.5em;
-}
+} */
 
 /*end of collection page*/
 
@@ -673,8 +682,8 @@ button,
 }
 
 #images-container-doughnuts img {
-  width: 37%;
-  height: auto;
+  width: 130px;
+  height: 150px;
   border: 3px solid var(--hot-pink);
   border-radius: 50%;
 }
@@ -788,10 +797,6 @@ button,
     padding: 2em;
   }
 
-  #images-container-doughnuts img {
-    width: 20%;
-  }
-
   #about-us-desc-container p {
     margin: 0 20% 0 20%;
   }
@@ -799,6 +804,13 @@ button,
   #images-container-doughnuts {
     gap: 10em !important;
     margin: 4em 0 4em 0;
+  }
+
+  #images-container-doughnuts img {
+    width: 201px;
+    height: 250px;
+    border: 3px solid var(--hot-pink);
+    border-radius: 50%;
   }
 
   #cross-over-image-container img {
@@ -1040,6 +1052,15 @@ button,
   /*collection page*/
 
   #collection-doughnut-container {
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5em;
+    justify-content: space-evenly;
+  }
+  /* 
+  #collection-doughnut-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -1096,7 +1117,7 @@ button,
   #caramel-delight {
     grid-column: 3/4;
     grid-row: 3/4;
-  }
+  } */
 
   /*end of collection page*/
 
