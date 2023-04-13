@@ -1,6 +1,6 @@
 import React from "react";
 
-import doughnut from "../images/doughnut_transparent_w-min.png";
+import doughnut from "../images/doughnut-header.png";
 import "./logo.css";
 export const Logo = () => {
   return (

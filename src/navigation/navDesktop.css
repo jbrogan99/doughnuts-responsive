@@ -1,7 +1,7 @@
 .nav-header-container {
   display: flex;
   flex-direction: row;
-  background: black;
+
   align-items: center;
   padding: 1em;
 }

@@ -19,7 +19,7 @@ export const ContactUs = () => {
           <p>07893778446</p>
         </main>
         <section id="contact-us-para-container">
-          <p>
+          <p className="">
             We’re pretty busy baking doughnuts – up to our eyeballs in cookie
             crumbs and caramel sauce, but you can always give us a call to find
             out more.

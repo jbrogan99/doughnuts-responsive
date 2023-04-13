@@ -79,7 +79,7 @@ button,
 .nav-header-container {
   display: flex;
   flex-direction: row;
-  background: black;
+
   align-items: center;
 }
 
@@ -441,8 +441,7 @@ button,
 }
 
 #navMobileContainer {
-  background-color: black;
-  padding: 0.3em;
+  margin: 1em;
 }
 
 #first-section {
@@ -611,6 +610,11 @@ button,
   display: none;
 }
 
+.logo_img {
+  width: 30px;
+  align-self: center;
+}
+
 #first-section {
   display: flex;
   flex-direction: column;
@@ -765,6 +769,32 @@ button,
 @media only screen and (min-width: 900px) {
   /*generic tags*/
 
+  .line-separator::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -18px;
+    height: 100%;
+    width: 1px;
+    background-color: black;
+  }
+
+  .line-separator {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .line-separator-last {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .nav-headings-container-desk {
+    gap: 1em;
+  }
+
   h2 {
     font-size: 2.5rem !important;
   }
@@ -840,9 +870,10 @@ button,
   .nav-header-container {
     display: flex;
     flex-direction: row;
-    background: black;
+
     align-items: center;
     justify-content: space-between;
+    margin: 1em;
   }
 
   .background-color-0 {
