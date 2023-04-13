@@ -2,15 +2,15 @@ import React from "react";
 import { Blob } from "../blob/blob";
 import { Sprinkles } from "../sprinkles/sprinkles";
 import video from "../video/video.mp4";
-import coffee from "../images-new/coffee.jpg";
-import sprinkles from "../images-new/zig-zag.jpg";
-import hazelnut from "../images-new/hazel.jpg";
-import lemon from "../images-new/lemon.jpg";
-import biscoff from "../images/biscoff-min.jpg";
-import caramel from "../images-new/caramel.jpg";
-import jam from "../images-new/jam.jpg";
-import velvet from "../images/redVelevt.jpg";
-import cookies from "../images-new/cookie.jpg";
+import coffee from "../images-320/coffee-min.jpg";
+import sprinkles from "../images-320/sprinkles-min.jpg";
+import hazelnut from "../images-320/hazlenut-min.jpg";
+import lemon from "../images-320/lemon.jpg";
+import biscoff from "../images-320/biscoff-min.jpg";
+import caramel from "../images-320/caramel.jpg";
+import jam from "../images-320/jam-min.jpg";
+import velvet from "../images-320/redVelevt.jpg";
+import cookies from "../images-320/cookie.jpg";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 export const Home = ({ activePage, setActivePage }) => {
@@ -32,62 +32,61 @@ export const Home = ({ activePage, setActivePage }) => {
     <>
       <div className="background-desktop">
         <div className="width-desk-container">
-          <section id="home-desk-computer-container">
-            <section id="background-hero">
-              <Sprinkles>
-                <h1 className="hero-h1">Doughnuts Made Different</h1>
-              </Sprinkles>
-            </section>
-            <div className="background-color-0">
-              <div id="doughnut-image-container-desk">
-                <figure id="images1">
-                  {images.map((imageUrl, index) => (
-                    <img
-                      key={index}
-                      src={imageUrl}
-                      alt="rotation of doughnuts, caramel, biscoff, and jam"
-                      className={`carousel-image ${
-                        currentImageIndex === index ? "active" : ""
-                      }`}
-                    />
-                  ))}
-                </figure>
-                <figure id="images2">
-                  {images2.map((imageUrl, index) => (
-                    <img
-                      key={index}
-                      src={imageUrl}
-                      alt="rotation of doughnuts, hazelnut, oozing caramel, and red velvet"
-                      className={`carousel-image ${
-                        currentImageIndex === index ? "active" : ""
-                      }`}
-                    />
-                  ))}
-                </figure>
-                <figure id="images3">
-                  {images3.map((imageUrl, index) => (
-                    <img
-                      key={index}
-                      src={imageUrl}
-                      alt="rotation of doughnuts and cookies, lemon curd, coffee, and half chocolate coated cookie"
-                      className={`carousel-image ${
-                        currentImageIndex === index ? "active" : ""
-                      }`}
-                    />
-                  ))}
-                </figure>
-              </div>
-              <div id="shop-donut-container">
-                <Link
-                  to="/collection"
-                  onClick={() => setActivePage("doughnut")}
-                  className="pink-black-btn"
-                >
-                  Shop our Doughnuts
-                </Link>
-              </div>
-            </div>
+          <section id="background-hero">
+            <Sprinkles>
+              <h1 className="hero-h1">Doughnuts Made Different</h1>
+            </Sprinkles>
           </section>
+          {/* <div className="background-color-0"> */}
+          <div id="doughnut-image-container-desk">
+            <figure id="images1">
+              {images.map((imageUrl, index) => (
+                <img
+                  key={index}
+                  src={imageUrl}
+                  alt="rotation of doughnuts, caramel, biscoff, and jam"
+                  className={`carousel-image ${
+                    currentImageIndex === index ? "active" : ""
+                  }`}
+                />
+              ))}
+            </figure>
+            <figure id="images2">
+              {images2.map((imageUrl, index) => (
+                <img
+                  key={index}
+                  src={imageUrl}
+                  alt="rotation of doughnuts, hazelnut, oozing caramel, and red velvet"
+                  className={`carousel-image ${
+                    currentImageIndex === index ? "active" : ""
+                  }`}
+                />
+              ))}
+            </figure>
+            <figure id="images3">
+              {images3.map((imageUrl, index) => (
+                <img
+                  key={index}
+                  src={imageUrl}
+                  alt="rotation of doughnuts and cookies, lemon curd, coffee, and half chocolate coated cookie"
+                  className={`carousel-image ${
+                    currentImageIndex === index ? "active" : ""
+                  }`}
+                />
+              ))}
+            </figure>
+            {/* </div> */}
+            <div id="shop-donut-container">
+              <Link
+                to="/collection"
+                onClick={() => setActivePage("doughnut")}
+                className="pink-black-btn"
+              >
+                Shop our Doughnuts
+              </Link>
+            </div>
+          </div>
+
           <main>
             <section id="celebrate-container">
               <Blob container="container-dipped" innerDiv="inner-dipped"></Blob>
