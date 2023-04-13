@@ -3,6 +3,7 @@ import "./navHeadings.css";
 import { Link } from "react-router-dom";
 
 export const NavHeadings = ({ activePage, setActivePage }) => {
+  //destructure props
   const handleClick = (page) => {
     setActivePage(page);
   };

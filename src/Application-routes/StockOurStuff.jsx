@@ -14,6 +14,8 @@ export const StockOurStuff = () => {
       <div id="container-stock-our-stuff">
         <section>
           <Sprinkles>
+            {" "}
+            {/*import component*/}
             <h1 id="stock-our-stuff" className="hero-h1">
               Stock our stuff
             </h1>

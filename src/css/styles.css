@@ -3,8 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Lato:wght@300&family=Roboto:wght@300&display=swap"); /*H1*/
 
 /*Mobile*/
-
-/* @media only screen and (max-width: 800px) { */
 /*Styles & Fonts*/
 html {
   height: 100%;
@@ -32,6 +30,7 @@ body {
 }
 
 :root {
+  /*setting variables to hold data*/
   --hot-pink: #ff4083;
   --light-purple: #fdefff;
   --ptag-margin-mobile: 0em 1em 0em 1em;
@@ -44,7 +43,7 @@ h2 {
   font-family: "Rampart One", cursive;
   font-family: "Titan One", cursive;
   font-size: 1.5rem;
-  color: white !important;
+  color: white !important; /*overwrite other styles*/
   text-shadow: 2px 2px black;
   letter-spacing: 3px;
 }
@@ -79,7 +78,6 @@ button,
 .nav-header-container {
   display: flex;
   flex-direction: row;
-
   align-items: center;
 }
 
@@ -88,6 +86,7 @@ button,
 }
 
 @media only screen and (max-width: 899px) {
+  /*mobile only carousel*/
   #doughnut-image-container-desk {
     /* display: flex;
   justify-content: center; */
@@ -141,6 +140,7 @@ button,
     font-size: 0.7em !important;
   }
 }
+
 #navMobileContainer {
   padding: 1em !important;
 }
@@ -278,64 +278,6 @@ button,
   justify-self: center;
   color: var(--hot-pink) !important;
 }
-/* 
-#caramel {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
-#raspberry {
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-
-#biscoff {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-
-#biscoff-cookie {
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-
-#coffee {
-  grid-column: 1/2;
-  grid-row: 3/4;
-}
-
-#velvet {
-  grid-column: 2/3;
-  grid-row: 3/4;
-}
-
-#lemon {
-  grid-column: 1/2;
-  grid-row: 4/5;
-}
-
-#hazelnut {
-  grid-column: 2/3;
-  grid-row: 4/5;
-}
-
-#one-of-a-kind {
-  grid-column: 1/2;
-  grid-row: 5/6;
-}
-#logo-img {
-  width: 35em;
-  height: 35em;
-}
-
-#caramel-delight {
-  grid-column: 2/3;
-  grid-row: 5/6;
-}
-
-#collection-heading {
-  margin-top: 0.5em;
-} */
 
 /*end of collection page*/
 
@@ -446,7 +388,6 @@ button,
 #first-section {
   background-color: #ff657d;
   margin: 0;
-
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position-y: -280px;
@@ -658,11 +599,6 @@ button,
   margin: 1em 0 1em 0;
 }
 
-/* .container {
-  padding: 0 !important;
-  margin: 2em 0 2em 0;
-} */
-
 #video-wrapper {
   width: 100%;
   display: flex;
@@ -746,14 +682,6 @@ button,
   text-shadow: 2px 2px #000;
 }
 
-/* #contact-number-container {
-    position: absolute;
-  } */
-
-/* #heading-description-wholesale-container h2 {
-  margin: 1em 0 1em 0;
-} */
-
 #heading-description-wholesale-container p {
   color: black;
   margin: 0 1em 1em 1em;
@@ -762,14 +690,31 @@ button,
 #home-desk-computer-container {
   margin: 0 10% 0 10%;
 }
-/* } */
 
 /*Desktop*/
-
 @media only screen and (min-width: 900px) {
-  /*generic tags*/
+  h2 {
+    font-size: 2.5rem !important;
+  }
+
+  h1 {
+    font-size: 3rem !important;
+  }
+
+  p {
+    line-height: 1.4;
+    font-size: 1.4rem !important;
+  }
+
+  /*end of generic tags*/
+
+  /*home page*/
+  .hero-h1 {
+    text-align: center;
+  }
 
   .line-separator::after {
+    /*adds line next to nav element*/
     content: "";
     position: absolute;
     top: 0;
@@ -793,27 +738,6 @@ button,
 
   .nav-headings-container-desk {
     gap: 1em;
-  }
-
-  h2 {
-    font-size: 2.5rem !important;
-  }
-
-  h1 {
-    font-size: 3rem !important;
-  }
-
-  p {
-    line-height: 1.4;
-    font-size: 1.4rem !important;
-  }
-
-  /*end of generic tags*/
-
-  /*Home page*/
-
-  .hero-h1 {
-    text-align: center;
   }
 
   #navMobileContainer {
@@ -895,11 +819,6 @@ button,
     border-radius: 25px;
     padding: 1em;
   }
-
-  /* #images1 > img {
-    max-height: 100%;
-    max-width: 100%;
-  } */
 
   .carousel-image {
     position: absolute;
@@ -1105,65 +1024,6 @@ button,
     gap: 5em;
     justify-content: space-evenly;
   }
-  /* 
-  #collection-doughnut-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
-
-  .doughnut-img-desc {
-    padding: 4em;
-  }
-  #caramel {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-
-  #raspberry {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-
-  #biscoff-cookie {
-    grid-column: 3/4;
-    grid-row: 1/2;
-  }
-
-  #biscoff {
-    grid-column: 4/5;
-    grid-row: 1/2;
-  }
-
-  #coffee {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  #velvet {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-
-  #lemon {
-    grid-column: 3/4;
-    grid-row: 2/3;
-  }
-
-  #hazelnut {
-    grid-column: 4/5;
-    grid-row: 2/3;
-  }
-
-  #one-of-a-kind {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
-
-  #caramel-delight {
-    grid-column: 3/4;
-    grid-row: 3/4;
-  } */
 
   /*end of collection page*/
 

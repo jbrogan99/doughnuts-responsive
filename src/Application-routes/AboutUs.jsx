@@ -1,5 +1,4 @@
 import React from "react";
-
 import jam from "../images-200-about/jam.jpg";
 import hazel from "../images-200-about/hazel.jpg";
 import crossOver from "../images-200-about/pink_bkground_man_women-min.png";
@@ -10,6 +9,8 @@ export const AboutUs = () => {
       <div id="container-our-story">
         <section id="banner-hero-container">
           <Sprinkles>
+            {" "}
+            {/*imported component*/}
             <h1 className="hero-h1">Our Story</h1>
           </Sprinkles>
         </section>

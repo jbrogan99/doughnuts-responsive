@@ -26,6 +26,7 @@ export const Collection = () => {
           <h2>Find our extensive range below</h2>
         </div>
         <main id="collection-doughnut-container">
+          {/*imported components*/}
           <CircleDoughnut
             src={caramel}
             children="Caramel oozer"

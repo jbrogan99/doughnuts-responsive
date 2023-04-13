@@ -14,7 +14,7 @@ import cookies from "../images-320/cookie.jpg";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 export const Home = ({ activePage, setActivePage }) => {
-  const images = [sprinkles, biscoff, jam];
+  const images = [sprinkles, biscoff, jam]; //arrays to store images
   const images2 = [hazelnut, caramel, velvet];
   const images3 = [lemon, coffee, cookies];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -23,9 +23,9 @@ export const Home = ({ activePage, setActivePage }) => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
+      ); //sets new index on images so they can toggle class / visibility
     }, 5000);
-    return () => clearInterval(interval);
+    return () => clearInterval(interval); // clean up function prevent memory leaks
   }, []);
 
   return (
@@ -40,16 +40,21 @@ export const Home = ({ activePage, setActivePage }) => {
           {/* <div className="background-color-0"> */}
           <div id="doughnut-image-container-desk">
             <figure id="images1">
-              {images.map((imageUrl, index) => (
-                <img
-                  key={index}
-                  src={imageUrl}
-                  alt="rotation of doughnuts, caramel, biscoff, and jam"
-                  className={`carousel-image ${
-                    currentImageIndex === index ? "active" : ""
-                  }`}
-                />
-              ))}
+              {images.map(
+                (
+                  imageUrl,
+                  index // loop round images array
+                ) => (
+                  <img
+                    key={index}
+                    src={imageUrl}
+                    alt="rotation of doughnuts, caramel, biscoff, and jam"
+                    className={`carousel-image ${
+                      currentImageIndex === index ? "active" : ""
+                    }`} // toggle class depending on index
+                  />
+                )
+              )}
             </figure>
             <figure id="images2">
               {images2.map((imageUrl, index) => (
@@ -75,11 +80,11 @@ export const Home = ({ activePage, setActivePage }) => {
                 />
               ))}
             </figure>
-            {/* </div> */}
+
             <div id="shop-donut-container">
-              <Link
+              <Link // link to collection page
                 to="/collection"
-                onClick={() => setActivePage("doughnut")}
+                onClick={() => setActivePage("doughnut")} //sets active page
                 className="pink-black-btn"
               >
                 Shop our Doughnuts

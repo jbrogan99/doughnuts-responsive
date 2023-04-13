@@ -6,6 +6,7 @@ import contact from "../images/contact_us-min.png";
 import { Link } from "react-router-dom";
 import "./dropdown.css";
 export const DropDown = ({
+  //destructure props
   setShowResults,
   showResults,
   activePage,
@@ -17,16 +18,19 @@ export const DropDown = ({
   };
   return (
     <>
-      {showResults ? (
+      {showResults ? ( // if show results value is true then render these elements
         <>
           <nav className="drop-down-nav-mobile">
             <ul className="text-image-nav-container">
               <li
                 className={`${
+                  //toggle class
                   activePage === "home" ? "active-nav navText" : "navText"
                 }`}
               >
                 <Link to="/" onClick={() => handleClick("home")}>
+                  {" "}
+                  {/*call handle click function*/}
                   Home
                 </Link>
               </li>

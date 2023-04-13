@@ -14,15 +14,16 @@ function App() {
   console.log("active page", activePage);
   return (
     <>
+      {/*wrap components round routes enabling navigation*/}
       <Router>
         <header>
           <Navigation activePage={activePage} setActivePage={setActivePage} />
         </header>
         <Routes>
           <Route
-            path="/"
+            path="/" // set route path
             element={
-              <Home activePage={activePage} setActivePage={setActivePage} />
+              <Home activePage={activePage} setActivePage={setActivePage} /> // component to render on route path
             }
           />
           <Route path="/about" element={<AboutUs />} />
@@ -35,4 +36,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; //export component

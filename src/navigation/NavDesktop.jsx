@@ -3,6 +3,7 @@ import { Logo } from "../logo/logo";
 import { NavHeadings } from "./NavHeadings";
 import "./navDesktop.css";
 export const NavDesktop = ({ activePage, setActivePage }) => {
+  //destructure props
   return (
     <>
       <div className="nav-header-container">
