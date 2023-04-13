@@ -1,12 +1,12 @@
 import React from "react";
-import caramel from "../images/caramel.jpg";
-import redVelvet from "../images/redVelevt.jpg";
-import cake from "../images/cake1.jpg";
-import cookieBiscoff from "../images/biscoff-cookie.jpg";
-import hazelnut from "../images/hazlenut-min.jpg";
-import sprinkles from "../images/sprinkles-min.jpg";
-import lemon from "../images/lemon.jpg";
-import coffee from "../images/coffee-min.jpg";
+import caramel from "../images-about-resized/caramel.jpg";
+import redVelvet from "../images-about-resized/redVelevt.jpg";
+import cake from "../images-about-resized/cake1.jpg";
+import cookieBiscoff from "../images-about-resized/biscoff-cookie.jpg";
+import hazelnut from "../images-about-resized/hazlenut-min.jpg";
+import sprinkles from "../images-about-resized/sprinkles-min.jpg";
+import lemon from "../images-about-resized/lemon.jpg";
+import coffee from "../images-about-resized/coffee-min.jpg";
 import { Sprinkles } from "../sprinkles/sprinkles";
 export const StockOurStuff = () => {
   return (
