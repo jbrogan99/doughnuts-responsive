@@ -4,6 +4,10 @@
   max-height: 2em;
 }
 
+#hamburger:hover {
+  cursor: pointer;
+}
+
 #menu_container {
   display: flex;
   justify-content: flex-end;
